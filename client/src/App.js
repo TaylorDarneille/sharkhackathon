@@ -10,6 +10,7 @@ import Login from './auth/Login.js';
 import Profile from './Profile.js';
 import Signup from './auth/Signup.js';
 import AddDogForm from './AddDogForm';
+import DogFormTwo from './layout/DogFormTwo';
 
 class App extends Component {
   constructor(props){
@@ -77,15 +78,16 @@ class App extends Component {
             <div className="space">
               <Flash flashType={this.state.flashType} flash={this.state.flash} setFlash={this.setFlash} cancelFlash={this.cancelFlash} />
               {/*<Route exact path="/home" component={Home} />*/}
-              <Route path="/login" component={
+              <Route exact path="/login" component={
                 () => (<Login user={this.state.user} setFlash={this.setFlash} updateUser={this.getUser} />)} />
-              <Route path="/" component={
-                () => (<Signup user={this.state.user} setFlash={this.setFlash} updateUser={this.getUser} />)} />
-              <Route path="/profile" component={
+              <Route exact path="/profile" component={
                 () => (<Profile user={this.state.user} setFlash={this.setFlash} />)} />
-              <Route path="/adddog" component={
+              <Route exact path="/adddog" component={
                 () => (<AddDogForm user={this.state.user} setFlash={this.setFlash} />)} />
-
+              <Route exact path="/funform" component={
+                () => (<DogFormTwo user={this.state.user} setFlash={this.setFlash} />)} />
+              <Route exact path="/" component={
+                () => (<Signup user={this.state.user} setFlash={this.setFlash} updateUser={this.getUser} />)} />
             </div>
           </div>
         </Router>
