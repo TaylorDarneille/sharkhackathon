@@ -86,6 +86,8 @@ class App extends Component {
                 () => (<AddDogForm user={this.state.user} setFlash={this.setFlash} />)} />
               <Route exact path="/funform" component={
                 () => (<DogFormTwo user={this.state.user} setFlash={this.setFlash} />)} />
+              <Route exact path="/addressform" component={
+                () => (<AddressForm user={this.state.user} setFlash={this.setFlash} />)} />
               <Route exact path="/" component={
                 () => (<Signup user={this.state.user} setFlash={this.setFlash} updateUser={this.getUser} />)} />
             </div>
