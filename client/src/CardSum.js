@@ -8,8 +8,11 @@ class CardSum extends Component{
 				<h2>Summary</h2>
 				<div>
 					<h3>1 Month Free Trial</h3><h4>Free <span class="price">$9.99</span></h4>
+				</div>
+				<div>
 					<h3>Total:</h3><h4><span class="price">$0.00</span></h4>
 				</div>
+			    <Link to="/finish">Next</Link>
 			</div>
 		)
 	}
