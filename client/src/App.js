@@ -77,19 +77,18 @@ class App extends Component {
             <div className="space">
               <Flash flashType={this.state.flashType} flash={this.state.flash} setFlash={this.setFlash} cancelFlash={this.cancelFlash} />
               {/*<Route exact path="/home" component={Home} />*/}
-              <Route path="/login" component={
+              <Route exact path="/login" component={
                 () => (<Login user={this.state.user} setFlash={this.setFlash} updateUser={this.getUser} />)} />
-              <Route path="/" component={
-                () => (<Signup user={this.state.user} setFlash={this.setFlash} updateUser={this.getUser} />)} />
-              <Route path="/profile" component={
+              <Route exact path="/profile" component={
                 () => (<Profile user={this.state.user} setFlash={this.setFlash} />)} />
-              <Route path="/adddog" component={
-                () => (<AddDogForm user={this.state.user} setFlash={this.setFlash} />)} />
-
+              <Route exact path="/adddog" component={
+                () => (<AddDogForm user={this.state.user} setFlash={this.setFlash} handleChange={this.handleChange} />)} />
+              <Route exact path="/" component={
+                () => (<Signup user={this.state.user} setFlash={this.setFlash} updateUser={this.getUser} />)} />
             </div>
           </div>
         </Router>
-        <Footer />
+        {/*<Footer />*/}
       </div>
     );
   }
