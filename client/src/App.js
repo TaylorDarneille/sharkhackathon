@@ -16,12 +16,14 @@ import CardSum from './CardSum';
 import Finish from './Finish';
 import AddressForm from './addressform';
 import Header from './Header.js';
+import Cloud from './Cloud';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      user: {}
+      user: {},
+      url: ''
     }
   }
   componentDidMount = () => {
@@ -74,6 +76,10 @@ class App extends Component {
     });
   }
 
+  setUrl = (petUrl) => {
+    this.setState({url: petUrl})
+  }
+
   render() {
     return (
       <div className="App">
@@ -89,7 +95,7 @@ class App extends Component {
               {/*<Route exact path="/profile" component={
                 () => (<Profile user={this.state.user} setFlash={this.setFlash} />)} />*/}
               <Route exact path="/adddog" component={
-                () => (<AddDogForm user={this.state.user} setFlash={this.setFlash} />)} />
+                () => (<AddDogForm user={this.state.user} url={this.props.url} setFlash={this.setFlash} />)} />
               <Route exact path="/funform" component={
                 () => (<DogFormTwo user={this.state.user} setFlash={this.setFlash} />)} />
               <Route exact path="/cardform" component={
