@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 class Signup extends Component {
   constructor(props) {
@@ -47,7 +48,6 @@ class Signup extends Component {
       return (
         <div className="signup-form">
           <form onSubmit={this.handleSubmit}>
-            <h1>Healthy Wags</h1>
             {/*<div>
               <input name="Name"
                    placeholder="What is your first name?"
@@ -56,6 +56,8 @@ class Signup extends Component {
               />
             </div>*/}
             <div>
+              <h2>Sign Up For Free Trial</h2>
+              <h5 className="shipping">(+free shipping)</h5>
               <input name="Email"
                    placeholder="Enter Email Here"
                    value={this.state.email}
@@ -70,6 +72,7 @@ class Signup extends Component {
              </div>
              <input type="submit" value="Create Account" className="btn-primary" />
           </form>
+          <h3>Already a member?</h3> <Link to="/login">Login</Link>
         </div>
       );
     }

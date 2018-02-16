@@ -121,6 +121,7 @@ nav a:hover {
   color: #7f4dd2;
 }
 
+
 /*.footer {
   background-color: #555;
   position: absolute;
@@ -133,6 +134,10 @@ nav a:hover {
   color: #fff;
   font-size: 10px;
 }*/
+
+.shipping {
+  font-size: .75em;
+}
 
 .space {
   margin: 15px 0;
@@ -198,6 +203,7 @@ nav a:hover {
   height: 150px;
   padding: 20px;
   color: black;
+  font-family: 'Lobster', cursive;
 }
 
 .App-title {
