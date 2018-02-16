@@ -9,10 +9,10 @@ class CardForm extends Component{
 		        <div class="form-style-3">
 		          <form>
 		          <fieldset>
-		          <label for="name"><span>Cardholder Name<span class="required">*</span></span><input type="text" name="name"/></label>
-		          <label for="field2"><span>Card Number<span class="required">*</span></span><input type="number" class="input-field" name="field2" value="" /></label>
-		          <label for="field3"><span>Expiration Date<span class="required">*</span></span><input type="text" class="input-field" name="field3" value="" placeholder="MM/YY" /></label>
-		          <label for="field2"><span>CVV<span class="required">*</span></span><input type="number" class="input-field" name="field2" value="" /></label>
+		          <label for="name"><span className="form-field">Cardholder Name<span class="required">*</span></span><input type="text" name="name"/></label>
+		          <label for="field2"><span className="form-field">Card Number<span class="required">*</span></span><input type="number" class="input-field" name="field2" value="" /></label>
+		          <label for="field3"><span className="form-field">Expiration Date<span class="required">*</span></span><input type="text" class="input-field" name="field3" value="" placeholder="MM/YY" /></label>
+		          <label for="field2"><span className="form-field">CVV<span class="required">*</span></span><input type="number" class="input-field" name="field2" value="" /></label>
 		          </fieldset>
 		          <Link to="/finish">Next</Link> 
 		          </form>

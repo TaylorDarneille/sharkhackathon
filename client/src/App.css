@@ -100,11 +100,11 @@ form input {
   font-size: 15px;
 }
 
+.form-field, .address-form {
+  padding-top: 15px;
+}
+
 /* CUSTOM STYLES */
-
-
-
-
 
 
 body {
@@ -127,6 +127,9 @@ nav a:hover {
   color: #7f4dd2;
 }
 
+a {
+  color: black;
+}
 
 /*.footer {
   background-color: #555;
