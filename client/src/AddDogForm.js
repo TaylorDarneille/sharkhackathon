@@ -7,8 +7,29 @@ class AddDogForm extends Component {
   render() {
     return (
       <div className="add-dog-form">
-        <h1>Healty Wags</h1>
-        <h2>Tell Us About Your Pup!</h2>
+
+      <div class="form-style-3">
+        <form>
+        <fieldset>{/*<legend>Personal</legend>*/}
+        <label for="name"><span>What is his/her name?</span><input type="text" name="name"/></label>
+        <label for="field2"><span>Email <span class="required">*</span></span><input type="email" class="input-field" name="field2" value="" /></label>
+        <label for="field3"><span>Phone <span class="required">*</span></span><input type="text" class="input-field" name="field3" value="" /></label>
+        <label for="field4"><span>Subject</span><select name="field4" class="select-field">
+        <option value="Appointment">Appointment</option>
+        <option value="Interview">Interview</option>
+        <option value="Regarding a post">Regarding a post</option>
+        </select></label>
+        </fieldset>
+        <fieldset><legend>Message</legend>
+        <label for="field6"><span>Message <span class="required">*</span></span><textarea name="field6" class="textarea-field"></textarea></label>
+        <label><span>&nbsp;</span><input type="submit" value="Submit" /></label>
+        </fieldset>
+        </form>
+      </div>
+
+
+      <div>
+        <h1>Tell Us About Your Pup!</h1>
         <form>
           <div>
             <label>What is his/her name?</label>
@@ -34,6 +55,8 @@ class AddDogForm extends Component {
           <Link to="/funform">Next</Link>
         </form>
       </div>
+
+    </div>
     );
   }
 }

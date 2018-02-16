@@ -5,7 +5,7 @@ class CardForm extends Component{
 	render(){
 		return(
 			<div class="add-dog-form">
-				<h2>This trial is free!</h2>
+				<h1>This trial is free!</h1>
 				<p>But we will need your card on file in case you want more treats!</p>
 				<form>
 					<label>CC Information</label>
