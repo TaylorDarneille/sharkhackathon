@@ -72,7 +72,8 @@ class Signup extends Component {
              </div>
              <input type="submit" value="Create Account" className="btn-primary" />
           </form>
-          <h3>Already a member?</h3> <Link to="/login">Login</Link>
+          <h3>Already a member?</h3>
+          <h3 className="login-link"><Link to="/login">Login</Link></h3>
         </div>
       );
     }

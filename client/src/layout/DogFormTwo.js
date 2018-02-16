@@ -9,7 +9,7 @@ class DogFormTwo extends Component{
         <form>
           <fieldset>
 	          <div id="dropdowns">
-		          <label for="treats"><span>What Type of Treats?</span>
+		          <label for="treats"><span className="form-field">What Type of Treats?</span>
 		          <select name="treats" class="select-field">
 		            <option value="Training Treats">Training Treats</option>
 		            <option value="Biscuits & Crunchy Treats">Biscuits & Crunchy Treats</option>
@@ -20,7 +20,7 @@ class DogFormTwo extends Component{
 		            <option value="Puppy Tough Bones">Puppy Tough Bones</option>   
 		          </select></label>
 		          <br />
-			          <label for="nutrition"><span>Nutritional Guidelines</span>
+			          <label for="nutrition"><span className="form-field">Nutritional Guidelines</span>
 			          <select name="nutrition" class="select-field">
 			            <option value="Gluten Free">Gluten Free</option>
 			            <option value="Grain Free">Grain Free</option>
@@ -33,7 +33,7 @@ class DogFormTwo extends Component{
 			            <option value="Lamb-Free">Lamb-Free</option>   
 			          </select></label>
 			         <br />
-			        <label for="goals"><span>Preventative Care</span>
+			        <label for="goals"><span className="form-field">Preventative Care</span>
 			          <select name="goals" class="select-field">
 			            <option value="Bone Development">Bone Development</option>
 			            <option value="Brain Development">Brain Development</option>
@@ -42,7 +42,7 @@ class DogFormTwo extends Component{
 			            <option value="Digestive Care">Digestive Care</option>
 			          </select></label>
 			        <br />
-			          <label for="goals"><span>Preventative Care</span>
+			          <label for="goals"><span className="form-field">Preventative Care</span>
 			          <select name="goals" class="select-field">
 			            <option value="Beef">Beef</option>
 			            <option value="Chicken">Chicken</option>

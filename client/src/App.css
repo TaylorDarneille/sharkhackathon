@@ -98,16 +98,18 @@ form input {
 
 /* CUSTOM STYLES */
 
-
 #pic {
   background-image: url('./pug_diving_in_water.jpg');
   width: 500px;
   height: 300px;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 0 auto;
+
+.form-field, .address-form {
+  padding-top: 15px;
 }
 
+/* CUSTOM STYLES */
 
 
 body {
@@ -130,6 +132,9 @@ nav a:hover {
   color: #7f4dd2;
 }
 
+a {
+  color: black;
+}
 
 /*.footer {
   background-color: #555;
