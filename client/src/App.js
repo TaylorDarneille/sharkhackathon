@@ -82,7 +82,7 @@ class App extends Component {
               <Route exact path="/profile" component={
                 () => (<Profile user={this.state.user} setFlash={this.setFlash} />)} />
               <Route exact path="/adddog" component={
-                () => (<AddDogForm user={this.state.user} setFlash={this.setFlash} handleChange={this.handleChange} />)} />
+                () => (<AddDogForm user={this.state.user} setFlash={this.setFlash} />)} />
               <Route exact path="/" component={
                 () => (<Signup user={this.state.user} setFlash={this.setFlash} updateUser={this.getUser} />)} />
             </div>
