@@ -19,8 +19,7 @@ class DogFormTwo extends Component{
 		            <option value="Bully Sticks">Bully Sticks</option>
 		            <option value="Puppy Tough Bones">Puppy Tough Bones</option>   
 		          </select></label>
-{/*		         </div>
-			        <div>*/}
+		          <br />
 			          <label for="nutrition"><span>Nutritional Guidelines</span>
 			          <select name="nutrition" class="select-field">
 			            <option value="Gluten Free">Gluten Free</option>
@@ -33,28 +32,26 @@ class DogFormTwo extends Component{
 			            <option value="Dairy-Free">Dairy-Free</option>
 			            <option value="Lamb-Free">Lamb-Free</option>   
 			          </select></label>
-{/*			         </div>
-	         <div>*/}
-	          <label for="goals"><span>Preventative Care</span>
-	          <select name="goals" class="select-field">
-	            <option value="Bone Development">Bone Development</option>
-	            <option value="Brain Development">Brain Development</option>
-	            <option value="Heart Healthy">Heart Healthy</option>
-	            <option value="Dental Care">Dental Care</option>
-	            <option value="Digestive Care">Digestive Care</option>
-	          </select></label>
-{/*	        </div>
-	        <div>*/}
-	          <label for="goals"><span>Preventative Care</span>
-	          <select name="goals" class="select-field">
-	            <option value="Beef">Beef</option>
-	            <option value="Chicken">Chicken</option>
-	            <option value="Duck">Duck</option>
-	            <option value="Fish">Fish</option>
-	            <option value="Lamb">Lamb</option>
-	            <option value="Pork">Pork</option>
-	          </select></label>
-	        </div>
+			         <br />
+			        <label for="goals"><span>Preventative Care</span>
+			          <select name="goals" class="select-field">
+			            <option value="Bone Development">Bone Development</option>
+			            <option value="Brain Development">Brain Development</option>
+			            <option value="Heart Healthy">Heart Healthy</option>
+			            <option value="Dental Care">Dental Care</option>
+			            <option value="Digestive Care">Digestive Care</option>
+			          </select></label>
+			        <br />
+			          <label for="goals"><span>Preventative Care</span>
+			          <select name="goals" class="select-field">
+			            <option value="Beef">Beef</option>
+			            <option value="Chicken">Chicken</option>
+			            <option value="Duck">Duck</option>
+			            <option value="Fish">Fish</option>
+			            <option value="Lamb">Lamb</option>
+			            <option value="Pork">Pork</option>
+			          </select></label>
+	       	 		</div>
           </fieldset>
           <Link to="/cardform">Next</Link> 
           </form>
