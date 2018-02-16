@@ -2,12 +2,7 @@ var mongoose = require('mongoose');
 var bcrypt = require('bcrypt');
 
 var userSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-    minlength: 1,
-    maxlength: 99
-  },
+  name: String,
   email: { // TODO: Need to add email validation
     type: String,
     required: true,
@@ -21,12 +16,7 @@ var userSchema = new mongoose.Schema({
     minlength: 6,
     maxlength: 99
   },
-  address: {
-    type: String,
-    required: true,
-    minlength: 10,
-    maxlength: 300
-  }
+  address: String
 });
 
 // Override 'toJSON' to prevent the password from being returned with the user

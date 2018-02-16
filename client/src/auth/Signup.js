@@ -39,40 +39,40 @@ class Signup extends Component {
 
   render() {
     let form = '';
-    if(this.props.user){
+    if(this.props.user && this.props.user.email){
+      console.log(this.props.user);
       return (<Redirect to="/profile" />);
     }
     else {
-      form = (<form onSubmit={this.handleSubmit}>
-                <div>
-                  <input name="Name"
-                       placeholder="What is your first name?"
-                       value={this.state.name}
-                       onChange={this.handleNameChange}
-                  />
-                </div>
-                <div>
-                  <input name="Email"
-                       placeholder="What is your email?"
-                       value={this.state.email}
-                       onChange={this.handleEmailChange} />
-               </div>
-               <div>
-                  <input name="Password"
-                     placeholder="Choose a password"
-                     type="password"
-                     value={this.state.password}
-                     onChange={this.handlePasswordChange} />
-                 </div>
-                 <input type="submit" value="Sign up!" className="btn-primary" />
-              </form>);
+      return (
+        <div className="signup-form">
+          <form onSubmit={this.handleSubmit}>
+            <h1>Healthy Wags</h1>
+            {/*<div>
+              <input name="Name"
+                   placeholder="What is your first name?"
+                   value={this.state.name}
+                   onChange={this.handleNameChange}
+              />
+            </div>*/}
+            <div>
+              <input name="Email"
+                   placeholder="Enter Email Here"
+                   value={this.state.email}
+                   onChange={this.handleEmailChange} />
+           </div>
+           <div>
+              <input name="Password"
+                 placeholder="Create Password"
+                 type="password"
+                 value={this.state.password}
+                 onChange={this.handlePasswordChange} />
+             </div>
+             <input type="submit" value="Create Account" className="btn-primary" />
+          </form>
+        </div>
+      );
     }
-    return (
-      <div>
-        {form}
-        {this.props.user ? <Redirect to="/profile" /> : ''}
-      </div>
-    );
   }
 }
 

@@ -9,6 +9,7 @@ import Nav from './layout/Nav.js';
 import Login from './auth/Login.js';
 import Profile from './Profile.js';
 import Signup from './auth/Signup.js';
+import AddDogForm from './AddDogForm';
 
 class App extends Component {
   constructor(props){
@@ -75,13 +76,16 @@ class App extends Component {
             <Nav user={this.state.user} updateUser={this.getUser} />
             <div className="space">
               <Flash flashType={this.state.flashType} flash={this.state.flash} setFlash={this.setFlash} cancelFlash={this.cancelFlash} />
-              <Route exact path="/" component={Home} />
+              {/*<Route exact path="/home" component={Home} />*/}
               <Route path="/login" component={
                 () => (<Login user={this.state.user} setFlash={this.setFlash} updateUser={this.getUser} />)} />
-              <Route path="/signup" component={
+              <Route path="/" component={
                 () => (<Signup user={this.state.user} setFlash={this.setFlash} updateUser={this.getUser} />)} />
               <Route path="/profile" component={
                 () => (<Profile user={this.state.user} setFlash={this.setFlash} />)} />
+              <Route path="/adddog" component={
+                () => (<AddDogForm user={this.state.user} setFlash={this.setFlash} />)} />
+
             </div>
           </div>
         </Router>
