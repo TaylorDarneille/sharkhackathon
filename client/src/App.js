@@ -13,11 +13,8 @@ import AddDogForm from './AddDogForm';
 import DogFormTwo from './layout/DogFormTwo';
 import CardForm from './CardForm';
 import CardSum from './CardSum';
-<<<<<<< HEAD
 import Finish from './Finish';
-=======
 import AddressForm from './addressform';
->>>>>>> d28a0d963d33fbbb6a088f6b68fd5963c402a770
 
 class App extends Component {
   constructor(props){
