@@ -11,6 +11,8 @@ import Profile from './Profile.js';
 import Signup from './auth/Signup.js';
 import AddDogForm from './AddDogForm';
 import DogFormTwo from './layout/DogFormTwo';
+import CardForm from './CardForm';
+import CardSum from './CardSum';
 
 class App extends Component {
   constructor(props){
@@ -86,6 +88,10 @@ class App extends Component {
                 () => (<AddDogForm user={this.state.user} setFlash={this.setFlash} />)} />
               <Route exact path="/funform" component={
                 () => (<DogFormTwo user={this.state.user} setFlash={this.setFlash} />)} />
+              <Route exact path="/cardform" component={
+                () => (<CardForm user={this.state.user} setFlash={this.setFlash} />)} />
+              <Route exact path="/cardsum" component={
+                () => (<CardSum user={this.state.user} setFlash={this.setFlash} />)} />
               <Route exact path="/" component={
                 () => (<Signup user={this.state.user} setFlash={this.setFlash} updateUser={this.getUser} />)} />
             </div>
