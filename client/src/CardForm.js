@@ -4,20 +4,21 @@ import { Link } from 'react-router-dom';
 class CardForm extends Component{
 	render(){
 		return(
-			<div class="add-dog-form">
-				<h1>This trial is free!</h1>
-				<p>But we will need your card on file in case you want more treats!</p>
-				<form>
-					<label>CC Information</label>
-					<input name="name"  placeholder="Cardholder Name" />
-					<input name="number" placeholder="Card Number" />
-					<input name="expiration" placeholder="Expiration Date" />
-					<input name="cvv" placeholder="CVV" />
-					<label>Billing Address same as Shipping</label>
-					<input type="checkbox" />
-          			<Link to="/cardsum">Next</Link>
-				</form>
-			</div>
+			<div>
+		      <div className="add-dog-form">
+		        <div class="form-style-3">
+		          <form>
+		          <fieldset>
+		          <label for="name"><span>Cardholder Name<span class="required">*</span></span><input type="text" name="name"/></label>
+		          <label for="field2"><span>Card Number<span class="required">*</span></span><input type="number" class="input-field" name="field2" value="" /></label>
+		          <label for="field3"><span>Expiration Date<span class="required">*</span></span><input type="text" class="input-field" name="field3" value="" placeholder="MM/YY" /></label>
+		          <label for="field2"><span>CVV<span class="required">*</span></span><input type="number" class="input-field" name="field2" value="" /></label>
+		          </fieldset>
+		          <Link to="/finish">Next</Link> 
+		          </form>
+		      </div>
+		    </div>
+		  </div>
 		)
 	}
 }
