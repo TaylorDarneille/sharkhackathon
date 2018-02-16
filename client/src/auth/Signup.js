@@ -41,7 +41,7 @@ class Signup extends Component {
     let form = '';
     if(this.props.user && this.props.user.email){
       console.log(this.props.user);
-      return (<Redirect to="/profile" />);
+      return (<Redirect to="/adddog" />);
     }
     else {
       return (
