@@ -8,7 +8,8 @@ class Finish extends Component{
 				<h2>Congrats!</h2>
 				<p>Expect a special treat in...</p>
 				<h3>3 Days!</h3>
-				<img src="#" alt="dog pic" />
+				<div id="pic">
+               	</div>
 			</div>
 		)
 	}

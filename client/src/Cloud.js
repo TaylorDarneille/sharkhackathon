@@ -6,6 +6,7 @@ var url;
 
 class Cloud extends Component {
     uploadWidget = () => {
+    	
         window.cloudinary.openUploadWidget({ cloud_name: 'jaders', upload_preset: 'pbctrtjm'},
             function(error, result) {
             	url = result[0].secure_url
