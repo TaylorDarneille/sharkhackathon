@@ -15,6 +15,7 @@ import CardForm from './CardForm';
 import CardSum from './CardSum';
 import Finish from './Finish';
 import AddressForm from './addressform';
+import Header from './Header.js';
 
 class App extends Component {
   constructor(props){
@@ -78,7 +79,8 @@ class App extends Component {
       <div className="App">
         <Router>
           <div>
-            <Nav user={this.state.user} updateUser={this.getUser} />
+            <Header />
+            {/*<Nav user={this.state.user} updateUser={this.getUser} />*/}
             <div className="space">
               <Flash flashType={this.state.flashType} flash={this.state.flash} setFlash={this.setFlash} cancelFlash={this.cancelFlash} />
               {/*<Route exact path="/home" component={Home} />*/}
