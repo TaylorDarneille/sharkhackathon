@@ -13,11 +13,7 @@ import AddDogForm from './AddDogForm';
 import DogFormTwo from './layout/DogFormTwo';
 import CardForm from './CardForm';
 import CardSum from './CardSum';
-<<<<<<< HEAD
-import Finish from './Finish';
-=======
 import AddressForm from './addressform';
->>>>>>> d28a0d963d33fbbb6a088f6b68fd5963c402a770
 
 class App extends Component {
   constructor(props){
@@ -97,8 +93,6 @@ class App extends Component {
                 () => (<CardForm user={this.state.user} setFlash={this.setFlash} />)} />
               <Route exact path="/cardsum" component={
                 () => (<CardSum user={this.state.user} setFlash={this.setFlash} />)} />
-              <Route exact path="/finish" component={
-                () => (<Finish user={this.state.user} setFlash={this.setFlash} />)} />
               <Route exact path="/addressform" component={
                 () => (<AddressForm user={this.state.user} setFlash={this.setFlash} />)} />
               <Route exact path="/" component={
