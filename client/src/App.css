@@ -104,6 +104,8 @@ form input {
   height: 300px;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-left: 42%;
+}
 
 .form-field, .address-form {
   padding-top: 15px;
