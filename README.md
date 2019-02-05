@@ -24,7 +24,7 @@ After seeing 11 other groups present, we were awarded third place! Post-hackatho
 ![Finished](./finished.png)
 ![Site](./site.png)
 
-###Presentation
+### Presentation
 ![presentation-slide](./presentation.png )
 
 # Technologies Used
